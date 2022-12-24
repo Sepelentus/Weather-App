@@ -1,3 +1,69 @@
 :root, body{
     font-family: 'Raleway', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 650;
+}
+
+.bloque{
+    background: #000000d0;
+    color: whitesmoke;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+}
+
+.buscar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton-buscar{
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 36px;
+    width: 36px;
+    outline: none;
+    background-color: #7c7c7c2b;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.search-bar{
+    margin: 0.5em;
+    border-radius: 25px;
+    border: none;
+    height: 36px;
+    outline: none;
+    background-color: #7c7c7c2b;
+    color: whitesmoke;
+    font-size: 1rem;
+    width: calc(100%-100px);
+}
+
+.boton-buscar:hover{
+    background: #7c7c7c8b;
+}
+
+.descripcion {
+    text-transform: capitalize;
+}
+
+.clima.loading{
+    visibility: hidden;
+    max-height: 15px;
+}
+
+.clima.loading::after{
+    visibility: visible;
+    content: "Cargando...";
+    font-weight: 100;
+    color: whitesmoke;
+    position: absolute;
+    top: 52.5vh;
+    left: 47.5vw;
 }
