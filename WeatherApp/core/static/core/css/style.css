@@ -60,7 +60,7 @@
 
 .clima.loading::after{
     visibility: visible;
-    content: "Cargando...";
+    content: "Escriba una ciudad.";
     font-weight: 100;
     color: whitesmoke;
     position: absolute;
